@@ -20,7 +20,7 @@ from student import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/',views.show),#To accessing the webpage
+    path('',views.show,name='home'),#To accessing the webpage
     path('reg/',views.register),
     path('existing/',views.existing),
     path('search/',views.search),
