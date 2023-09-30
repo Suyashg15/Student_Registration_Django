@@ -1,4 +1,4 @@
-<head>
+<head >
     <style>
     ul {
       list-style-type: none;
@@ -28,20 +28,18 @@
     li a:hover:not(.active) {
       background-color: #04AA6D;
       border: #333;
-      border-radius: 30%;
+      border-radius: 20%;
     }
     
     .active {
       background-color: #04AA6D;
       border: #333;
-      border-radius: 30%;
+      border-radius: 50%;
 
     }
-
-    
     </style>
     </head>
-<div  style="background-color: #04AA6D;">
+<div  style="background-color:#ADD8E6 ;">
     <center><h1>STUDENT REGISTRATION SYSTEM</h1></center>
     <ul>
         <li><a href="{% url 'home'%}">Home</a></li>
@@ -49,7 +47,7 @@
         <li><a href="/existing">Registered Students</a></li>
         <li><a href="/search">Search</a></li>
         <li><a href="/drop">Drop Out</a></li>
-        <li class="active" style="float:right;"><a href="#about">About</a></li>
+        <li class="active" style="float:right;"><a href="/about">About</a></li>
     </ul>
 </div>
 

@@ -6,6 +6,10 @@ from .forms import StudForm,SForm
 #For accessing the webpages
 def show(request):
     return render(request,"home.html") #render is used to drawing(displaying) the webpage on the browser
+
+def about(request):
+    return render(request,'about.html') #renders the about.html page
+
 def register(request):
     title="NEW STUDENT REGISTRATION"
     form=StudForm(request.POST or None)
