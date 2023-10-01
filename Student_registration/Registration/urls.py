@@ -25,5 +25,5 @@ urlpatterns = [
     path('existing/',views.existing),
     path('search/',views.search),
     path('drop/',views.dropout),
-    path('about/',views.about)
+    path('about/',views.about),
 ]

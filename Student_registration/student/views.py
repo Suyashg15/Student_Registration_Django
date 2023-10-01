@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import stud
 from .forms import StudForm,SForm
 
@@ -9,6 +9,7 @@ def show(request):
 
 def about(request):
     return render(request,'about.html') #renders the about.html page
+
 
 def register(request):
     title="NEW STUDENT REGISTRATION"
