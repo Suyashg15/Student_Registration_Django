@@ -19,7 +19,7 @@ def register(request):
         addr=form.cleaned_data['s_addr']
         school=form.cleaned_data['s_school']
         mail=form.cleaned_data['s_email']
-        email=stud.objects.filter(s_email=mail)#For avoiding repetative registration of same student
+        email=stud.objects.filter(s_email=mail)#For avoiding repetitive registration of same student
         if len(email)>0:
             return render(request,'ack.html',{'title':"STUDENT ALREADY EXITS..TRY WITH OTHER EMAIL"})
         else:
