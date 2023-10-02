@@ -12,3 +12,9 @@ Features of Student Registration System:
 2. All the registered students can be seen on the "Registered Students" Column
 3. If any student drops out from school then its data can be deleted from the table / database.
 4. About the system is mentioned inside the About section of wesite.
+
+Home Page:
+![Home page](https://github.com/Suyashg15/Student_Registration_Django/assets/121086270/3ca80173-4a1b-4065-99b2-80e4f917cb85)
+
+Registration page:
+![Registration Page](https://github.com/Suyashg15/Student_Registration_Django/assets/121086270/23f87b4e-ae8d-4c5d-ae72-c5f1772b2eb5)
