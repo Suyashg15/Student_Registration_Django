@@ -1,0 +1,12 @@
+<html>
+    {% include "base.html" %}
+    <br>
+    <center><h1>{{title}}</h1></center>
+    <br>
+    <center>
+        <form>{%csrf_token%}<!--For writing python codes-->
+            {{form.as_p}}<!--Writing a python variable-->
+            <button type="submit" style="background-color: #04AA6D; color: whitesmoke;height: 30px;width: 100px"><h3>DropOut</h3></button>
+        </form>
+    </center>
+</html>

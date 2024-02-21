@@ -1,0 +1,58 @@
+{%load static%}
+<header>
+  <center><img width = '150' src="{%static 'logo.jpg'%}" alt="Logo of the System"></center>
+</header>
+<head>
+    <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    li {
+      float: left;
+      border-right:1px solid #bbb;
+    }
+    
+    li:last-child {
+      border-right: none;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover:not(.active) {
+      background-color: #04AA6D;
+      border: #333;
+      border-radius: 20%;
+    }
+    
+    .active {
+      background-color: #04AA6D;
+      border: #333;
+      border-radius: 50%;
+
+    }
+    </style>
+    </head>
+<div>
+    <center><h1>STUDENT REGISTRATION SYSTEM</h1></center>
+    <ul>
+        <li><a href="{% url 'home'%}">Home</a></li>
+        <li><a href="/reg">New Registrations</a></li>
+        <li><a href="/existing">Registered Students</a></li>
+        <li><a href="/search">Search</a></li>
+        <li><a href="/drop">Drop Out</a></li>
+        <li class="active" style="float:right;"><a href="/about">About</a></li>
+    </ul>
+</div>
+
+  
